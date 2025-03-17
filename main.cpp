@@ -1,6 +1,30 @@
 #include <iostream>
-using namespace std;
- int main(){ 
+
+int addNum(int num) { 
+    while (num >= 10) { 
+        int sum = 0;
+        while (num > 0) {
+            sum += num % 10; 
+            num /= 10; 
+        }
+        num = sum;
+    }
+    return num;
+}
+
+int main() {
+    int num;
+    std::cout << "Enter the number: ";
+    std::cin >> num;
+
+    int final = addNum(num); 
+    std::cout << "Final sum: " << final << std::endl;
+
+    return 0;
+}
+
+
+
     // int a,b,c,max;
 //         cout << "Enter 3 numbers : ";
 //         cin >> a >> b >> c;
