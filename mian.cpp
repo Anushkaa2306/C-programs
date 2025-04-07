@@ -46,6 +46,7 @@ cin >> dValue;
     for( int i=1;i<=10;i++)
     cout << i << endl;
  }*/
+// 27. Write a C++ program to calculate the sum of the first 50 natural numbers using a while loop.
 
  //Q27.Write a C++ program to calculate the sum of the first 50 natural numbers using a while loop.
  /*#include<iostream>
@@ -177,3 +178,65 @@ while(i<10);
 
 //  }cout<<even;
 // }
+
+
+//35. Write a C++ program to find the largest number in an array using a for loop.
+/*#include<iostream>
+using namespace std;
+int main(){
+   int a[],max;
+   cout <<"Enter 5 array element : ";
+for(int i=0;i>=5;i++)
+{
+   cin>>a[i];
+}
+for(int i=0;i>=5;i++){
+if(a[i]>a[i-1])
+ a[i]=max;
+}
+for(int i=0;i>=5;i++)
+{
+   cout <<"Maximum: "<< max;
+}
+
+}*/
+
+
+//64. Write a C++ program to convert a decimal number to a binary number using a while loop.
+
+/*#include <iostream>
+using namespace std;
+
+void decimalToBinary(int num) {
+    int binary[32]; 
+    int index = 0;
+    if (num == 0) {
+        cout << "Binary: 0" << endl;
+        return;
+    }
+    while (num > 0) {
+        binary[index] = num % 2; 
+        num /= 2;             
+        index++;
+    }
+
+   
+    cout << "Binary: ";
+    for (int i = index - 1; i >= 0; i--) {
+        cout << binary[i];
+    }
+    cout << endl;
+}
+
+int main() {
+    int decimalNumber;
+    
+   
+    cout << "Enter a decimal number: ";
+    cin >> decimalNumber;
+
+    
+    decimalToBinary(decimalNumber);
+
+    return 0;
+}*/

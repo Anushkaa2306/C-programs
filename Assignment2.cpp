@@ -243,7 +243,7 @@ return 3.14*a*a; }
 int rect(int a, int b) {
     return a*b;
 }
-double tri(double l,double b)
+double tri(double l,double b,double c=0)
 {return l*b*0.5;}
 int main() {
     double x,y;
@@ -264,18 +264,66 @@ tri(x,y);
 
 /*#include<iostream>
 using namespace std;
-int Max(int a,int b,int c){
-    int max=a;
-    if(max<b){
-        max=b;  }
-    if(max<c)
-    {  max=c; }
-return max;
+int max(int a,int b){
+    return (a>b?a:b);
+        
+    }
+
+int max(int a,int b ,int c){
+
+    return (a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c);
 }
 int main(){
     int x,y,z;
-    cout << "Enter 3 number : ";
-    cin >>x>>y>>z;
-cout<<Max(x,y,z);
+    cout <<"Enter 1st number :";
+    cin>>x;
+    cout <<"Enter 2nd number :";
+    cin>>y;
+    cout <<"Enter 3rd number :";
+    cin>>z;
+    cout<<"The maximum in 2 numbers are :"<<max(x,y)<<endl;
+    cout << "The maximum in 3 numbers are :"<<max(x,y,z);
+}*/
+
+//43. Create overloaded functions to print different data types (int, float, string).
+/*#include<iostream>
+using namespace std;
+int Int(int a){
+    return a;
+}
+
+float Flt(float a){
+    return a;
+}
+
+string Str(string a){
+    return a;
+}
+
+int main(){
+    string x="hello";
+    cout <<"integer value :"<<Int(4)<<endl;
+    cout <<"float value :"<<Flt(22.2)<<endl;
+    cout<<"string value :"<<Str(x);
+}*/
+
+//44. Write a function with default arguments to calculate the compound interest.
+/*#include<iostream>
+#include<cmath>
+using namespace std;
+double ci(double pri,double rate=5.0 ,int time=3,int n=1){
+    return pri  * pow(1+rate/(100*n),n*time);
+
+}
+int main(){
+    double principal = 10000;
+    cout << "Compound Interest: " << ci(principal) << endl;
 
 }*/
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << " occurred!" << endl;
+    return 0;  // Nonzero indicates an error
+}

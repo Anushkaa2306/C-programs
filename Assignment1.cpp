@@ -1,31 +1,33 @@
 #include <iostream>
 
-int addNum(int num) { 
-    while (num >= 10) { 
+int addNum(int num)
+{
+    while (num >= 10)
+    {
         int sum = 0;
-        while (num > 0) {
-            sum += num % 10; 
-            num /= 10; 
+        while (num > 0)
+        {
+            sum += num % 10;
+            num /= 10;
         }
         num = sum;
     }
     return num;
 }
 
-int main() {
+int main()
+{
     int num;
     std::cout << "Enter the number: ";
     std::cin >> num;
 
-    int final = addNum(num); 
+    int final = addNum(num);
     std::cout << "Final sum: " << final << std::endl;
 
     return 0;
 }
 
-
-
-    // int a,b,c,max;
+// int a,b,c,max;
 //         cout << "Enter 3 numbers : ";
 //         cin >> a >> b >> c;
 //         max=a;
@@ -33,13 +35,13 @@ int main() {
 //           {max=b;}
 //          if(c>max)
 //           {max=c;}
-        
+
 //           cout<<"The largest number is "<<max;
 //           return 0;
 // }
-        
-        //Q2. Write a program to read 2 numbers from the keyboard and display the larger value on
-           //      the screen.
+
+// Q2. Write a program to read 2 numbers from the keyboard and display the larger value on
+//       the screen.
 //     int a,b;
 //     cout << "Enter 2 numbers:";
 //     cin >> a >> b;
@@ -61,7 +63,7 @@ int main() {
 
 // Q3.(long method)
 //   int a,b,c;
-//   cout<< "enter 3 numbers  : "; 
+//   cout<< "enter 3 numbers  : ";
 // cin>> a >> b >> c;
 //   if(a>b && a>c){
 //     cout<<a<<" is greatest number";
@@ -78,9 +80,8 @@ int main() {
 //             cout<<c<<" is equal to "<<a;
 
 // (short method)
-//Q3.Write that obtains the largest of 3 numbers.
+// Q3.Write that obtains the largest of 3 numbers.
 
-        
 //  Q4.checking if number is even or odd.
 // int a;
 // cout<<"Enter any number : ";
@@ -90,7 +91,7 @@ int main() {
 // cout<<"The number is even.";
 // else
 // cout<<"The number is odd.";
-    
+
 // int a;
 // int w,min;
 // int b = sizeof(a);
@@ -124,31 +125,31 @@ int main() {
 //     cout << "Enter your choice (1-8): ";
 //     cin >> choice;
 
-//     if (choice == 1) 
+//     if (choice == 1)
 //     {
 //      int min = -(pow(2, 31));
 //      int max = (pow(2, 31) - 1);
 //      cout << "Range of int: " << min << " to " << max << endl;
 //     }
-        
-//     else if (choice == 2) 
+
+//     else if (choice == 2)
 //        {  int min =  pow(2, -126);
 //           int max = pow(2, -126);
 //         cout << "Approximate range of float: " << min << " to " << max << endl;
 //        }
-//     else if (choice == 3) 
+//     else if (choice == 3)
 //         cout << "Approximate range of double: " << pow(2, -1022) << " to " << pow(2, 1023) << endl;
-//     else if (choice == 4) 
+//     else if (choice == 4)
 //         cout << "Range of char: " << -(pow(2, 7)) << " to " << (pow(2, 7) - 1) << endl;
-//     else if (choice == 5) 
+//     else if (choice == 5)
 //         cout << "Range of short: " << -(pow(2, 15)) << " to " << (pow(2, 15) - 1) << endl;
-//     else if (choice == 6) 
+//     else if (choice == 6)
 //         cout << "Range of long: " << -(pow(2, 31)) << " to " << (pow(2, 31) - 1) << endl;
-//     else if (choice == 7) 
+//     else if (choice == 7)
 //         cout << "Range of long long: " << -(pow(2, 63)) << " to " << (pow(2, 63) - 1) << endl;
-//     else if (choice == 8) 
+//     else if (choice == 8)
 //         cout << "Range of unsigned int: 0 to " << (pow(2, 32) - 1) << endl;
-//     else 
+//     else
 //         cout << "Invalid choice! Please enter a number between 1 and 8.\n";
 
 //     return 0;
@@ -169,7 +170,7 @@ int main() {
 //      if(max<min)
 //           goto bhiyao;
 //     for(i=min;i<=max;i++)
-      
+
 //          {if (i%2==0)
 //      cout<<i<<endl;
 //      }
@@ -188,14 +189,14 @@ int main() {
 //             cout<<"The number is not prime.";
 //             isprime=1;
 //             break;
-            
-//          }     
+
+//          }
 //     }
 //      if(isprime==0)
 //     cout << "Number is prime.";
 //     return 0;
 // }
-//  
+//
 // int main(){
 //     int i,j,num,isprime=0;
 //      for(i=0;i<=10;i++)
@@ -209,7 +210,6 @@ int main() {
 //             }
 //         }
 //         if(isprime==0)
-//          cout<< i; 
+//          cout<< i;
 //      }
 // }
-     
